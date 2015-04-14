@@ -5,16 +5,12 @@
 
 @mixin gradient-vert($color1, $color2) {
   background: $color2; //fallback; it could just as easily be $color1
-  background: linear-gradient(to bottom,  $color1 0%,$color2 100%); //god bless autoprefixer
+  background: linear-gradient(to bottom, $color1 0%, $color2 100%); //god bless autoprefixer
 }
 
 @mixin gradient-hor($color1, $color2) {
   background: $color2; //fallback; it could just as easily be $color1
-  background: linear-gradient(to right,  $color1 0%,$color2 100%);
-}
-
-@mixin transform($var) {
-  transform: $var;
+  background: linear-gradient(to right, $color1 0%, $color2 100%);
 }
 
 @mixin transition($var: all .3s ease) {
@@ -29,5 +25,20 @@
     #{$no-query} & {
       @content;
     }
+  }
+}
+
+@mixin specificity($num: 1) { //from http://www.sitepoint.com/selector-specificity-css-preprocessors/
+  $selector: &;
+  @if $num > 1 {
+    @for $i from 1 to $num {
+      $selector: $selector + &;
+    }
+    @at-root #{$selector} {
+      @content;
+    }
+  }
+  @else {
+    @content;
   }
 }

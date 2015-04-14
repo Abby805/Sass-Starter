@@ -7,18 +7,20 @@
 // Base Font Size
 $base-font-size: 16; //change this to whatever size (in px) most of the body copy in your project is
 
-// Time out for a function
-@function px-to-em($px, $denominator: $base-font-size) {
-  @return $px / $denominator * 1em;
-}
-
 // Breakpoints
-// Make these whatever you want
-// $bp-tiny: px-to-em(480);
-// $bp-small: px-to-em(768);
-// $bp-med: px-to-em(1024);
+// Make these whatever you want... probably put them in ems
+// $bp-tiny: 480px;
+// $bp-small: 768px;
+// $bp-med: 1024px;
 
 // The max-width of the stage on full desktop
-//$max-stage-width: px-to-em(1160);
+//$max-stage-width: 1160px; //put this in ems yo
 
+// No-query class for if we need IE8 to play nice with our media queries
 $no-query: '.no-mediaqueries'; //don't mess with this; it works with Modernizr
+
+//Icons
+$i-facebook: '\e600';
+$i-twitter: '\e601';
+$i-youtube: '\e602';
+$i-linkedin: '\e603';
