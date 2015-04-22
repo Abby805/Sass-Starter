@@ -1,8 +1,6 @@
 Sass Starter
 ============
 
-In which we deliberately don't use Compass!
-
 To Use
 ======
 

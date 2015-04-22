@@ -17,6 +17,18 @@
   transition: $var;
 }
 
+@mixin nth-child($i...) {
+  $selectors: ();
+  
+  @each $num in $i {
+    $selectors: join($selectors, unquote('&:nth-child(#{$num})'), comma);
+  }
+  
+  #{$selectors} {
+    @content;
+  }
+}
+
 @mixin breakpoint($bp, $no-query: false) {
   @media (min-width: #{$bp}) {
     @content;
