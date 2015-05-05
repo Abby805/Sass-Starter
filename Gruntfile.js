@@ -84,5 +84,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks("grunt-modernizr");
+  grunt.loadNpmTasks('grunt-modernizr');
 };
