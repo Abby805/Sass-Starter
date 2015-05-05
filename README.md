@@ -17,5 +17,9 @@ To Do
 =====
 
 * Get LiveReload (or alternative) working
-* Play with KSS or Hologram
-* Add minify and/or uglify
+* Hologram - https://www.npmjs.com/package/grunt-hologram
+* CSS Min - https://www.npmjs.com/package/grunt-contrib-cssmin
+* JS Uglify - https://www.npmjs.com/package/grunt-contrib-uglify
+* Combine MQ - https://www.npmjs.com/package/grunt-combine-mq
+* Grunt express for server? - http://thecrumb.com/2014/03/15/using-grunt-for-live-reload/
+* Or https://www.npmjs.com/package/grunt-serve or http://gregbabiars.com/using-grunt-as-your-front-end-dev-server/ for server?

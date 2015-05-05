@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         files: ['sass/{,**/}*.scss'],
         tasks: ['sass:dev'],
         options: {
-          livereload: false
+          livereload: true
         }
       },
       styles: {
