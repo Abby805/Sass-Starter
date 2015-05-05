@@ -77,7 +77,16 @@ module.exports = function (grunt) {
           ]
         }
       }
-    } //modernizr
+    }, //modernizr
+    connect: {
+      server: {
+        options: {
+          livereload: true,
+          port: 9009,
+          open: true
+        }
+      }
+    } //connect
   }); //initConfig
 
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -85,4 +94,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-modernizr');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  grunt.registerTask('serve', [
+    'connect:server',
+    'watch'
+  ]);
 };

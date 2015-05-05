@@ -16,7 +16,6 @@ To create a custom modernizr build based on your code, run "grunt modernizr:dist
 To Do
 =====
 
-* Get LiveReload (or alternative) working
 * Hologram - https://www.npmjs.com/package/grunt-hologram
 * CSS Min - https://www.npmjs.com/package/grunt-contrib-cssmin
 * JS Uglify - https://www.npmjs.com/package/grunt-contrib-uglify
