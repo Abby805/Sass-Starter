@@ -5,15 +5,13 @@
 		@extend %bold;
 		position: static;
 		display: block;
-		width: 100%;
-		padding-top: .5em;
-		padding-bottom: .5em;
-		clip: auto; 
-		height: auto; 
+		clip: auto;
+		width: auto;
+		height: auto;
+		padding: 1em;
+		margin: auto;
 		overflow: visible;
-		margin: auto; 
 		text-align: center;
 		text-transform: uppercase;
-		color: white;
 	}
 }
