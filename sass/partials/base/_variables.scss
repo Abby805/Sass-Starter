@@ -9,18 +9,12 @@ $base-font-size: 16; //change this to whatever size (in px) most of the body cop
 
 // Breakpoints
 // Make these whatever you want
-// $bp-tiny: 480px;
-// $bp-small: 768px;
-// $bp-med: 1024px;
+// $bp-tiny: 30em;
+// $bp-small: 48em;
+// $bp-med: 64em;
 
 // The max-width of the stage on full desktop
-//$max-stage-width: 1160px; //put this in ems yo
+//$max-stage-width: 72.5em;
 
 // No-query class for if we need IE8 to play nice with our media queries
-$no-query: '.no-mediaqueries'; //don't mess with this; it works with Modernizr
-
-//Icons
-$i-facebook: '\e600';
-$i-twitter: '\e601';
-$i-youtube: '\e602';
-$i-linkedin: '\e603';
+$no-query: '.no-mediaqueries'; //don't mess with this; it works with Modernizr (unless you're not supporting IE8)

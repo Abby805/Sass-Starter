@@ -1,13 +1,13 @@
-@font-face {
-	font-family: 'icon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/icomoon.woff') format('woff'),
-			url('../fonts/icomoon.ttf') format('truetype'),
-			url('../fonts/icomoon.svg#icon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+// @font-face { //if you're using an icon font
+// 	font-family: 'icon';
+// 	src:url('../fonts/icomoon.eot');
+// 	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+// 			url('../fonts/icomoon.woff') format('woff'),
+// 			url('../fonts/icomoon.ttf') format('truetype'),
+// 			url('../fonts/icomoon.svg#icon') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
 
 html {
 	font-size: ($base-font-size/16) * 100%;
@@ -26,9 +26,10 @@ h5,
 h6 { //frequently these all have something in common - bold, different font, margin, etc.
 	// margin-bottom: .5em;
 	// @extend %bold;
+	// @extend %serif;
 }
 
-h1 { //most h1s, except the logo on the homepage
+h1 {
 
 }
 

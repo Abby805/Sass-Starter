@@ -29,7 +29,7 @@
   }
 }
 
-@mixin breakpoint($bp, $no-query: false) {
+@mixin breakpoint($bp, $no-query: false) { //you can remove all the no-query stuff if you're not supporting IE8
   @media (min-width: #{$bp}) {
     @content;
   }
@@ -37,20 +37,5 @@
     #{$no-query} & {
       @content;
     }
-  }
-}
-
-@mixin specificity($num: 1) { //from http://www.sitepoint.com/selector-specificity-css-preprocessors/
-  $selector: &;
-  @if $num > 1 {
-    @for $i from 1 to $num {
-      $selector: $selector + &;
-    }
-    @at-root #{$selector} {
-      @content;
-    }
-  }
-  @else {
-    @content;
   }
 }

@@ -1,4 +1,4 @@
-%clearfix{
+%clearfix {
   &:before,
   &:after {
     content: "";
@@ -10,7 +10,7 @@
   }
 }
 
-%visuallyhidden{
+%visuallyhidden {
   position: absolute; 
   clip: rect(0 0 0 0); 
   width: 1px;
@@ -21,16 +21,16 @@
   overflow: hidden; 
 }
 
-%icon {
-  font-family: 'icon'; //declared in the typography partial
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  speak: none;
-}
+// %icon { //if you're using an icon font
+//   font-family: 'icon'; //declared in the typography partial
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
+//   -webkit-font-smoothing: antialiased;
+//   speak: none;
+// }
 
 %sans-serif {
   font-family: 'Arial', sans-serif; //replace this with a webfont usually
@@ -55,6 +55,7 @@
   margin-bottom: 1em;
 
   li {
+    position: relative;
     margin-bottom: 1em;
 
     &:before {
