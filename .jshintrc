@@ -18,7 +18,6 @@
   "trailing": true,
   "smarttabs": true,
   "predef": [
-    "Drupal",
     "Modernizr"
   ]
 }
