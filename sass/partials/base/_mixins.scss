@@ -17,6 +17,7 @@
   transition: $var;
 }
 
+// Rarely use this, but it's cool when needed...
 @mixin nth-child($i...) {
   $selectors: ();
   

@@ -14,5 +14,4 @@ To create a custom modernizr build based on your code, run "grunt modernizr:dist
 
 ### To Do
 
-* Hologram - https://www.npmjs.com/package/grunt-hologram
 * JS Uglify - https://www.npmjs.com/package/grunt-contrib-uglify

@@ -17,4 +17,4 @@ $base-font-size: 16; //change this to whatever size (in px) most of the body cop
 //$max-stage-width: 72.5em;
 
 // No-query class for if we need IE8 to play nice with our media queries
-$no-query: '.no-mediaqueries'; //don't mess with this; it works with Modernizr (unless you're not supporting IE8)
+$no-query: '.no-mediaqueries'; //don't mess with this; it works with Modernizr (unless you're not supporting IE8, then feel free to nuke it)
